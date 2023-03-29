@@ -1,17 +1,16 @@
-import logo from "./logo.svg";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import MyNav from "./components/MyNav";
 import MyFooter from "./components/MyFooter";
 import AllTheBooks from "./components/AllTheBooks";
+import Welcome from "./components/Welcome";
 
 function App() {
   return (
-    <body>
+    <body className="App">
       <header>
-        <div className="App">
-          <MyNav />
-        </div>
+        <MyNav />
+        <Welcome />
       </header>
       <main>
         <AllTheBooks />
