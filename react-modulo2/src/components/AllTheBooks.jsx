@@ -8,7 +8,7 @@ import book1 from "../books/fantasy.json";
 import book2 from "../books/history.json";
 import book3 from "../books/horror.json";
 import book4 from "../books/romance.json";
-import book5 from "../books/scifi.json";
+// import book5 from "../books/scifi.json";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/esm/Container";
@@ -44,7 +44,7 @@ class AllTheBooks extends Component {
                           {dish.category}
                         </p>
                         <Card.Text>{dish.price}€</Card.Text>
-                        <Button variant="warning">Acquista</Button>
+                        <Button variant="warning">Details</Button>
                       </Card.Body>
                     </Col>
                   </Row>
@@ -82,7 +82,7 @@ class AllTheBooks extends Component {
                           {dish.category}
                         </p>
                         <Card.Text>{dish.price}€</Card.Text>
-                        <Button variant="warning">Acquista</Button>
+                        <Button variant="warning">Details</Button>
                       </Card.Body>
                     </Col>
                   </Row>
@@ -120,7 +120,7 @@ class AllTheBooks extends Component {
                           {dish.category}
                         </p>
                         <Card.Text>{dish.price}€</Card.Text>
-                        <Button variant="warning">Acquista</Button>
+                        <Button variant="warning">Details</Button>
                       </Card.Body>
                     </Col>
                   </Row>
@@ -158,7 +158,7 @@ class AllTheBooks extends Component {
                           {dish.category}
                         </p>
                         <Card.Text>{dish.price}€</Card.Text>
-                        <Button variant="warning">Acquista</Button>
+                        <Button variant="warning">Details</Button>
                       </Card.Body>
                     </Col>
                   </Row>
@@ -166,18 +166,14 @@ class AllTheBooks extends Component {
 
                 {/* SCIFI */}
 
-                <Container
+                {/* <Container
                   fluid
                   className="d-flex flex-wrap justify-content-center  m-2 p-2"
                 >
                   {book5.map((dish) => {
                     return (
-                      <div>
-                        <Card
-                          key={book5.asin}
-                          id="card"
-                          style={{ width: "20rem" }}
-                        >
+                      <div key={book5.asin}>
+                        <Card id="card" style={{ width: "20rem" }}>
                           <Row>
                             <Col>
                               <Card.Body id="card-body">
@@ -202,7 +198,7 @@ class AllTheBooks extends Component {
                                   {dish.category}
                                 </p>
                                 <Card.Text>{dish.price}€</Card.Text>
-                                <Button variant="warning">Acquista</Button>
+                                <Button variant="warning">Details</Button>
                               </Card.Body>
                             </Col>
                           </Row>
@@ -210,7 +206,7 @@ class AllTheBooks extends Component {
                       </div>
                     );
                   })}
-                </Container>
+                </Container> */}
               </div>
             );
           })}
