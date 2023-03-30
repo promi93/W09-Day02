@@ -4,7 +4,6 @@ import MyNav from "./components/MyNav";
 import MyFooter from "./components/MyFooter";
 // import AllTheBooks from "./components/AllTheBooks";
 import Welcome from "./components/Welcome";
-// import SingleBook from "./components/SingleBook";
 import BookList from "./components/BookList";
 
 function App() {

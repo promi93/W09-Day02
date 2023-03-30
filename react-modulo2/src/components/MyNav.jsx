@@ -2,8 +2,6 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import logo from "../assets/img/logo-ebook.png";
-import Form from "react-bootstrap/Form";
-import Button from "react-bootstrap/Button";
 
 function MyNav() {
   return (
@@ -20,15 +18,6 @@ function MyNav() {
             <Nav.Link href="#">Books</Nav.Link>
           </Nav>
         </Navbar.Collapse>
-        <Form className="d-flex">
-          <Form.Control
-            type="search"
-            placeholder="Search"
-            className="me-2"
-            aria-label="Search"
-          />
-          <Button variant="outline-success">Clicca</Button>
-        </Form>
       </Container>
     </Navbar>
   );

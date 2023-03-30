@@ -3,13 +3,28 @@ import Card from "react-bootstrap/Card";
 import { Component } from "react";
 
 class SingleBook extends Component {
+  state = {
+    selected: false,
+  };
+
+  clickCard = () => {
+    this.setState({ selected: !this.state.selected });
+  };
+
   render() {
+    const cardClassName = this.state.selected ? "selected-card" : "";
+
     return (
-      <Card key={this.props.asin} className="m-3" style={{ width: "18rem" }}>
+      <Card
+        className={cardClassName}
+        key={this.props.asin}
+        style={{ width: "18rem" }}
+      >
         <Card.Img
           style={{ height: "20rem" }}
           variant="top"
           src={this.props.img}
+          onClick={this.clickCard}
         />
         <Card.Body>
           <Card.Title>{this.props.title}</Card.Title>
