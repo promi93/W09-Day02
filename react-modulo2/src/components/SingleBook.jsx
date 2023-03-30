@@ -5,7 +5,7 @@ import { Component } from "react";
 class SingleBook extends Component {
   render() {
     return (
-      <Card className="m-3" style={{ width: "18rem" }}>
+      <Card key={this.props.asin} className="m-3" style={{ width: "18rem" }}>
         <Card.Img
           style={{ height: "20rem" }}
           variant="top"

@@ -24,8 +24,8 @@ class AllTheBooks extends Component {
         >
           {book1.map((dish) => {
             return (
-              <div>
-                <Card key={book1.asin} id="card" style={{ width: "20rem" }}>
+              <div key={book1.asin}>
+                <Card id="card" style={{ width: "20rem" }}>
                   <Row>
                     <Col>
                       <Card.Body id="card-body">
@@ -62,8 +62,8 @@ class AllTheBooks extends Component {
         >
           {book2.map((dish) => {
             return (
-              <div>
-                <Card key={book2.asin} id="card" style={{ width: "20rem" }}>
+              <div key={book2.asin}>
+                <Card id="card" style={{ width: "20rem" }}>
                   <Row>
                     <Col>
                       <Card.Body id="card-body">
@@ -100,8 +100,8 @@ class AllTheBooks extends Component {
         >
           {book3.map((dish) => {
             return (
-              <div>
-                <Card key={book3.asin} id="card" style={{ width: "20rem" }}>
+              <div key={book3.asin}>
+                <Card id="card" style={{ width: "20rem" }}>
                   <Row>
                     <Col>
                       <Card.Body id="card-body">
@@ -138,8 +138,8 @@ class AllTheBooks extends Component {
         >
           {book4.map((dish) => {
             return (
-              <div>
-                <Card key={book4.asin} id="card" style={{ width: "20rem" }}>
+              <div key={book4.asin}>
+                <Card id="card" style={{ width: "20rem" }}>
                   <Row>
                     <Col>
                       <Card.Body id="card-body">
