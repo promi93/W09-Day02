@@ -21,12 +21,11 @@ class BookList extends Component {
 
   render() {
     return (
-      <Container fluid>
-        <Form className="d-flex">
+      <Container fluid className="px-5 my-4">
+        <Form className="d-flex justify-content-center">
           <Form.Control
             type="search"
-            placeholder="Search"
-            className="me-2"
+            placeholder="Cerca il tuo libro..."
             aria-label="Search"
             onChange={(e) => {
               this.setState({

@@ -68,3 +68,8 @@
 .selected-card {
   margin: 20px;
 }
+
+.form-control {
+  width: 30% !important;
+  margin-right: 10px;
+}

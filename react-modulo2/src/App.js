@@ -5,6 +5,9 @@ import MyFooter from "./components/MyFooter";
 // import AllTheBooks from "./components/AllTheBooks";
 import Welcome from "./components/Welcome";
 import BookList from "./components/BookList";
+import CommentArea from "./components/CommentArea";
+import CommentList from "./components/CommentList";
+import AddComment from "./components/AddComment";
 
 function App() {
   return (
@@ -14,7 +17,11 @@ function App() {
         <Welcome />
       </header>
       <main>
-        <BookList />
+        <BookList>
+          <CommentArea />
+          <CommentList />
+          <AddComment />
+        </BookList>
       </main>
       <footer>
         <MyFooter />
